@@ -1,0 +1,57 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ZipExtractorCore/1.0.0": {
+        "dependencies": {
+          "FlagParser": "1.0.0",
+          "ZipStorer64": "3.5.1"
+        },
+        "runtime": {
+          "ZipExtractorCore.dll": {}
+        }
+      },
+      "FlagParser/1.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/FlagParser.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ZipStorer64/3.5.1": {
+        "runtime": {
+          "lib/netstandard2.0/ZipStorer.dll": {
+            "assemblyVersion": "3.5.0.0",
+            "fileVersion": "3.5.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ZipExtractorCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FlagParser/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nFIQDtzvUjvchBbtlVLlpdsIBCSPX5BXxX1kdxakUP+QrWGOTIqi3fFEZVfdHJu6WUnl+6EDils6x7uB6Xb57w==",
+      "path": "flagparser/1.0.0",
+      "hashPath": "flagparser.1.0.0.nupkg.sha512"
+    },
+    "ZipStorer64/3.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uD74N4tlr+Bm9bDTYwOAo6fQXfMUYcoJFEIdw6aQIm+0fJo5yYFIjq7zbbjNOJ6hvIjFxEN4xFh2vzaGJMGitQ==",
+      "path": "zipstorer64/3.5.1",
+      "hashPath": "zipstorer64.3.5.1.nupkg.sha512"
+    }
+  }
+}

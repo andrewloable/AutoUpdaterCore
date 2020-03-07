@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ZipExtractorCore": {
+      "commandName": "Project",
+      "commandLineArgs": "-exeFile=\"G:\\projects\\dotnet\\AutoUpdaterCore\\AutoUpdaterCoreSample\\bin\\Debug\\netcoreapp3.1\\AutoUpdaterCoreSample.exe\" -exePath=\"G:\\projects\\dotnet\\AutoUpdaterCore\\AutoUpdaterCoreSample\\bin\\Debug\\netcoreapp3.1\" -zipFile=\"C:\\Users\\mandark\\AppData\\Local\\Temp\\publish.zip\""
+    }
+  }
+}
