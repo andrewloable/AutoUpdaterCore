@@ -6,7 +6,7 @@ AutoUpdater Library for DotNet Core applications based on https://github.com/rav
 ### Update JSON File
 ```
 {
-  "version": "1.0.0.0",
+  "version": "1.0.2.0",
   "url": "https://loable.tech/something.zip",
   "checksum": "SHA512_Checksum_of_ZipFile",
   "hash":  "SHA512"
