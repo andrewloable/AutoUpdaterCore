@@ -2,34 +2,62 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>Andrew Loable</Authors>
+    <Company>Loable Technologies</Company>
+    <Description>AutoUpdater Library for DotNet Core applications based on https://github.com/ravibpatel/AutoUpdater.NET</Description>
+    <Copyright>(c) 2020 - Andrew Loable - Loable Technologies</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/andrewloable/AutoUpdaterCore</PackageProjectUrl>
+    <PackageIcon>loable tech logo.png</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/andrewloable/AutoUpdaterCore</RepositoryUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ZipExtractor\" />
+    <None Remove="ZipExtractor\FlagParser.dll" />
+    <None Remove="ZipExtractor\ZipExtractorCore.deps.json" />
+    <None Remove="ZipExtractor\ZipExtractorCore.dll" />
+    <None Remove="ZipExtractor\ZipExtractorCore.exe" />
+    <None Remove="ZipExtractor\ZipExtractorCore.pdb" />
+    <None Remove="ZipExtractor\ZipExtractorCore.runtimeconfig.json" />
+    <None Remove="ZipExtractor\ZipStorer.dll" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="ZipExtractor\FlagParser.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
     </None>
-    <None Update="ZipExtractor\ZipExtractorCore.deps.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <None Include="C:\Users\mandark\Pictures\loable tech logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
     </None>
-    <None Update="ZipExtractor\ZipExtractorCore.dll">
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ZipExtractor\FlagParser.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="ZipExtractor\ZipExtractorCore.exe">
+    </Content>
+    <Content Include="ZipExtractor\ZipExtractorCore.deps.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="ZipExtractor\ZipExtractorCore.pdb">
+    </Content>
+    <Content Include="ZipExtractor\ZipExtractorCore.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="ZipExtractor\ZipExtractorCore.runtimeconfig.json">
+    </Content>
+    <Content Include="ZipExtractor\ZipExtractorCore.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="ZipExtractor\ZipStorer.dll">
+    </Content>
+    <Content Include="ZipExtractor\ZipExtractorCore.pdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Content>
+    <Content Include="ZipExtractor\ZipExtractorCore.runtimeconfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZipExtractor\ZipStorer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

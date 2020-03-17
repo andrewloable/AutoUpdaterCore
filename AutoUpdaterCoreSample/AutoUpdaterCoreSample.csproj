@@ -4,6 +4,10 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Version>1.0.1.0</Version>
+    <Authors>Andrew M. Loable</Authors>
+    <Company>Loable Technologies</Company>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Product>AutoUpdaterCore</Product>
   </PropertyGroup>
 
   <ItemGroup>

@@ -25,6 +25,7 @@ namespace LoableTech
         {
             var assembly =  Assembly.GetEntryAssembly();
             var client = new HttpClient();
+            client.Timeout = TimeSpan.FromSeconds(10);
             if (headers != null && headers.Count > 0)
             {
                 foreach (var h in headers)
