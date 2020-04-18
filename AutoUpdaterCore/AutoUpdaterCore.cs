@@ -71,7 +71,7 @@ namespace LoableTech
             var ext = Path.GetExtension(tempPath);
             if (ext.Equals(".zip", StringComparison.OrdinalIgnoreCase))
             {
-                var zipExtractor = Path.Combine("ZipExtractor", "ZipExtractorCore.exe");
+                var zipExtractor = Path.Combine(Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName), "ZipExtractor", "ZipExtractorCore.exe");
                 // dotnet core will use dll, rename to exe
                 var exeFile = Process.GetCurrentProcess().MainModule.FileName.Replace(".dll", ".exe", StringComparison.OrdinalIgnoreCase);
                 var exePath = Path.GetDirectoryName(exeFile);
