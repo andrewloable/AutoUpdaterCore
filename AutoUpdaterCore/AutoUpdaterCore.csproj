@@ -12,17 +12,39 @@
     <PackageIcon>loable tech logo.png</PackageIcon>
     <PackageIconUrl />
     <RepositoryUrl>https://github.com/andrewloable/AutoUpdaterCore</RepositoryUrl>
-    <Version>1.0.2</Version>
+    <Version>1.1.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="ZipExtractor\FlagParser.dll" />
-    <None Remove="ZipExtractor\ZipExtractorCore.deps.json" />
-    <None Remove="ZipExtractor\ZipExtractorCore.dll" />
-    <None Remove="ZipExtractor\ZipExtractorCore.exe" />
-    <None Remove="ZipExtractor\ZipExtractorCore.pdb" />
-    <None Remove="ZipExtractor\ZipExtractorCore.runtimeconfig.json" />
-    <None Remove="ZipExtractor\ZipStorer.dll" />
+    <None Remove="ZipExtractor\93282512_685372162002405_2597776905599975424_n.jpg" />
+    <None Remove="ZipExtractor\linux-arm\ZipExtractorCore" />
+    <None Remove="ZipExtractor\linux64\ZipExtractorCore" />
+    <None Remove="ZipExtractor\osx64\ZipExtractorCore" />
+    <None Remove="ZipExtractor\TextFile1.txt" />
+    <None Remove="ZipExtractor\win-arm\ZipExtractorCore.exe" />
+    <None Remove="ZipExtractor\win32\ZipExtractorCore.exe" />
+    <None Remove="ZipExtractor\win64\ZipExtractorCore.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ZipExtractor\linux-arm\ZipExtractorCore">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZipExtractor\linux64\ZipExtractorCore">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZipExtractor\osx64\ZipExtractorCore">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZipExtractor\win-arm\ZipExtractorCore.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZipExtractor\win32\ZipExtractorCore.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZipExtractor\win64\ZipExtractorCore.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -37,27 +59,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="ZipExtractor\FlagParser.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZipExtractor\ZipExtractorCore.deps.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZipExtractor\ZipExtractorCore.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZipExtractor\ZipExtractorCore.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZipExtractor\ZipExtractorCore.pdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZipExtractor\ZipExtractorCore.runtimeconfig.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZipExtractor\ZipStorer.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <PackageReference Include="Mono.Posix.NETStandard" Version="1.0.0" />
   </ItemGroup>
 
 </Project>

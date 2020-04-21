@@ -22,7 +22,7 @@ namespace AutoUpdaterCoreSample
             {
                 Console.WriteLine("Error : " + args.Message);
             };
-            AutoUpdater.StartAsync(@"https://example.com/update.json").Wait();
+            AutoUpdater.StartAsync(@"https://storage.googleapis.com/butanganan.loable.tech/updates/AutoUpdatedCoreSample/update.json").Wait();
             Console.WriteLine("Done Running");
         }
     }

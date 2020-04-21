@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <Version>1.0.1.0</Version>
+    <Version>1.0.0.0</Version>
     <Authors>Andrew M. Loable</Authors>
     <Company>Loable Technologies</Company>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -11,7 +11,28 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AutoUpdaterCore\AutoUpdaterCore.csproj" />
+    <PackageReference Include="AutoUpdaterCore" Version="1.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="E:\nuget packages\autoupdatercore\1.1.2\contentFiles\any\netcoreapp3.1\ZipExtractor\linux-arm\ZipExtractorCore">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="E:\nuget packages\autoupdatercore\1.1.2\contentFiles\any\netcoreapp3.1\ZipExtractor\linux64\ZipExtractorCore">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="E:\nuget packages\autoupdatercore\1.1.2\contentFiles\any\netcoreapp3.1\ZipExtractor\osx64\ZipExtractorCore">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="E:\nuget packages\autoupdatercore\1.1.2\contentFiles\any\netcoreapp3.1\ZipExtractor\win-arm\ZipExtractorCore.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="E:\nuget packages\autoupdatercore\1.1.2\contentFiles\any\netcoreapp3.1\ZipExtractor\win32\ZipExtractorCore.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="E:\nuget packages\autoupdatercore\1.1.2\contentFiles\any\netcoreapp3.1\ZipExtractor\win64\ZipExtractorCore.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
